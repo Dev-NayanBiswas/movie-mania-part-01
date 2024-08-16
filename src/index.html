@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movie Mania Part-01</title>
+    <link href="./output.css" rel="stylesheet" />
+    <script src="./index.js" type="module" defer></script>
+  </head>
+  <body class="bg-black text-white">
+    <header>
+      <nav class="flex flex-col justify-center items-center py-3">
+        <h1>Movie Mania</h1>
+        <p class="font-mono italic font">part-01</p>
+      </nav>
+      <button id="less">Show Less</button>
+      <button id="des">Lates Reviews First</button>
+      <input id="search" type="text" placeholder="Search"/>
+      <button id="asc">Last Reviews First</button>
+      <button id="more">Show More</button>
+    </header>
+    <main>
+      <section class="flex gap-3 py-3 justify-center">
+        <div>
+          Total Movies
+          <h1 class="card" id="totalMoviesID"></h1>
+        </div>
+        <div>
+          Average Ratings
+          <h1 class="card" id="totalAverageRatingsID"></h1>
+        </div>
+        <div>
+          Total Reviews
+          <h1 class="card" id="totalReviewsID"></h1>
+        </div>
+      </section>
+
+      <section class="review_container">
+        <h1 class="reviews__heading">Movie Reviews</h1>
+        <ul class="my-3 text-left grid grid-cols-3 gap-10"></ul>
+      </section>
+    </main>
+    <footer></footer>
+  </body>
+</html>

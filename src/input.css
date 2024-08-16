@@ -1,0 +1,116 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+@layer components{
+    
+    header{
+        text-align: center;
+        & nav{
+            background: linear-gradient(to top, transparent, rgb(1, 80, 10));
+            & h1{
+                color: whitesmoke;
+                font-size: 4rem;
+                font-family: fantasy;
+            }
+        }
+    }
+    button{
+        padding: 1rem 2.5rem;
+        font-size: 1rem;
+        font-weight: 800;
+        font-style: italic;
+        background-color: #28ec6c6c;
+        transition: all 0.3s linear;
+        color: rgb(255, 253, 253);
+        margin-inline: 1.5rem;
+        margin-top: 1rem;
+        border-radius: 10px;
+        
+        &:hover{
+            background-color: #502c02d1;
+        }
+        &:focus{
+            color: rgb(233, 227, 227);
+            background-color: rgba(56, 105, 47, 0.496);
+        }
+    }
+    button:disabled{
+        pointer-events: none;
+        background-color: #51010100;
+        color: rgba(251, 251, 251, 0.183);
+        border: 0.5px solid rgba(251, 251, 251, 0.183);
+    }
+    input{
+        padding: 1rem 2.5rem;
+        font-size: 1rem;
+        font-weight: 800;
+        font-style: italic;
+        background-color: #bbf7d000;
+        border-bottom: 0.2rem solid green;
+        transition: all 0.3s linear;
+        color: gray;
+        margin-inline: 1.5rem;
+        margin-top: 1rem;
+        
+        &:focus{
+            outline: none;
+            background: #2c272701;
+            color: white;
+        }
+    }
+    input::placeholder{
+        color: rgb(245, 189, 189);
+        font-size: x-large;
+        font-weight: 400;
+    }
+    ul{
+        & li{
+            margin-top: 1rem;
+        }
+    }
+    div{
+        font-family: cursive;
+    }
+    h1{
+        margin: 1rem auto 0rem;       
+    }
+    .card{
+        background:#BBF7D0;
+        color:#343232;
+        font-size: 600;
+        font-style: italic;
+        min-height: 5dvh;
+        min-width: 20dvw;
+        text-align: center;
+        display: grid;
+        place-items: center;
+        border-radius: 0.3rem;
+    }
+    section{
+        margin: 4rem auto;
+        text-align: center;
+    }
+    span{
+        font-size: 2rem;
+        color: rgb(241, 190, 59);
+    }
+    .reviews__heading{
+        font-family: cursive;
+        font-size: 2.5rem;
+    }
+    .userName{
+        font-size: 1rem;
+        font-weight: 800;
+        color: rgb(159, 4, 4);
+        & small{
+            color: black;
+            margin-left: 5rem;
+            font-weight: 500;
+            font-size: 0.8rem;
+        }
+    }
+
+}
